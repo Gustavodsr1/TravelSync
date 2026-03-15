@@ -1,0 +1,6 @@
+@TravelSync.Gateway_HostAddress = http://localhost:5093
+
+GET {{TravelSync.Gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Invitation/">
+    <Project Path="src/Services/Invitation/TravelSync.Invitation.API/TravelSync.Invitation.API.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Location/">
+    <Project Path="src/Services/Location/TravelSync.Location.API/TravelSync.Location.API.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Notification/">
+    <Project Path="src/Services/Notification/TravelSync.Notification.Worker/TravelSync.Notification.Worker.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Trip/">
+    <Project Path="src/Services/Trip/TravelSync.Trip.API/TravelSync.Trip.API.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/TravelSync.Messaging/TravelSync.Messaging.csproj" />
+    <Project Path="src/Shared/TravelSync.SharedKernel/TravelSync.SharedKernel.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/Unit/">
+    <Project Path="tests/Unit/TravelSync.Unit.Tests/TravelSync.Unit.Tests.csproj" />
+  </Folder>
+</Solution>

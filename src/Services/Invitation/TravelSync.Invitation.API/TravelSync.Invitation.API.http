@@ -1,0 +1,6 @@
+@TravelSync.Invitation.API_HostAddress = http://localhost:5219
+
+GET {{TravelSync.Invitation.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
