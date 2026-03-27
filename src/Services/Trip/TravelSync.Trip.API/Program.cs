@@ -33,7 +33,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 
 builder.Services.AddMediatR(cfg =>
-    cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+{
+    cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
+    cfg.AddOpenBehavior(typeof(TravelSync.Trip.API.Infrastructure.Behaviors.ValidationBehavior<,>));
+});
 
 builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 
