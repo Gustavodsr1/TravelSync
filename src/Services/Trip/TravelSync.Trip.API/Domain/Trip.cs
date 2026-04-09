@@ -53,6 +53,8 @@ public class Trip : Entity
         _members.Any(m => m.UserId == userId && m.MembershipStatus == MembershipStatus.Accepted);
 
     public bool CanAccess(Guid userId) => IsOwner(userId) || IsMemberAccepted(userId);
+
+    public bool IsCancelled => Status == TripStatus.Cancelled;
 }
 
 public enum TripStatus

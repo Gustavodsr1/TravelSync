@@ -22,6 +22,12 @@ public sealed class CreateTripValidator : AbstractValidator<CreateTripCommand>
         {
             d.RuleFor(x => x.Country).NotEmpty().WithMessage("Destination country is required.");
             d.RuleFor(x => x.City).NotEmpty().WithMessage("Destination city is required.");
+            d.RuleFor(x => x.Latitude)
+                .InclusiveBetween(-90m, 90m).WithMessage("Latitude must be between -90 and 90.")
+                .When(x => x.Latitude.HasValue);
+            d.RuleFor(x => x.Longitude)
+                .InclusiveBetween(-180m, 180m).WithMessage("Longitude must be between -180 and 180.")
+                .When(x => x.Longitude.HasValue);
         });
     }
 }
